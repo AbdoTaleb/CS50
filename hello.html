@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Workoutstation</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="hello.scss">
+
+        <style>
+            a {
+                color: blue;
+            }
+            a [href="https://www.facebook.com/"]{
+                color: rgb(255, 0, 0);
+            }
+            button{
+                width: 200;
+                height: 50px;
+                font-size: 24px;
+                background-color: green;
+
+            }
+            button:hover{
+                background-color: rebeccapurple;
+            }
+            @media (min-width: 600px){
+                body{
+                    background-color: white;
+                }
+            }
+            @media (max-width: 599px){
+                body{
+                    background-color: blue;
+                }
+            }
+            #container{
+                display: flex;
+                flex-wrap: wrap;
+            }
+            #container > div{
+                background-color: springgreen;
+                font-size: 20px;
+                margin: 20px;
+                padding: 20px;
+                width: 200px;
+
+            }
+            #grid{
+                background-color: green;
+                display: grid;
+                padding: 20px;
+                grid-column-gap: 10px;
+                grid-row-gap: 10px;
+                grid-template-columns: 200px 200px auto;
+            }
+            .grid-item{
+                background-color: white;
+                font-size: 20px;
+                padding: 20px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li>One</li>
+                <ul>
+                    <li>sublist one</li>
+                    <li>sublist two</li>
+                </ul>
+            <li>Two</li>
+            <li>Three</li>
+        </ul>
+        An orser list:
+            <ol>
+                <li>Chest</li>
+                <li>Back</li>
+                <li>Legs</li>
+            </ol>
+        <ul>
+            <li><a href="https://www.facebook.com/">WorkoutStation Facebook</a></li>
+        </ul>
+        <div id="container">
+            <div>1. This is a sample text inside of a div to demo lexbox</div>
+            <div>2. This is a sample text inside of a div to demo lexbox</div>
+            <div>3. This is a sample text inside of a div to demo lexbox</div>
+            <div>4. This is a sample text inside of a div to demo lexbox</div>
+            <div>5. This is a sample text inside of a div to demo lexbox</div>
+            <div>6. This is a sample text inside of a div to demo lexbox</div>
+            <div>This is a sample text inside of a div to demo lexbox</div>
+            <div>This is a sample text inside of a div to demo lexbox</div>
+            <div>This is a sample text inside of a div to demo lexbox</div>
+            <div>This is a sample text inside of a div to demo lexbox</div>
+
+        </div>
+        <div id="grid">
+            <div class="grid-item">1</div>
+            <div class="grid-item">1</div>
+            <div class="grid-item">1</div>
+            <div class="grid-item">1</div>
+            <div class="grid-item">1</div>
+            <div class="grid-item">1</div>
+            <div class="grid-item">1</div>
+            <div class="grid-item">1</div>
+            <div class="grid-item">10</div>
+        </div>
+        <button>Click Me</button>
+        <h1 style="color: blue; text-align: center;">WorkoutStation</h1>
+        <h2>Welcome</h2>
+            <img src="workoutstation.jpg" alt="workoutstation" width="400">
+            <br>
+            <a href="https://www.youtube.com/channel/UC3zTyBesVlgQ2hAXcwkeG4w">WorkoutStation Youtube</a>
+            <br>
+            <a href="workoutstation.jpg">WorkoutStation Image</a>
+            <br>
+            
+            An unordered list:
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Day One</th>
+                        <th>Workout</th>
+                        <th>Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Chest</td>
+                        <td>Upper chest</td>
+                        <td>12:00</td>
+                    </tr>
+                    <tr>
+                        <td>Back</td>
+                        <td>Upper</td>
+                        <td>12:00</td>
+                    </tr>
+                </tbody>
+            </table>
+            <form>
+                <input type="text" placeholder="Full Name" name="name">
+                <input type="submit">
+            </form>
+
+    </body>
+</html>
